@@ -1,0 +1,55 @@
+<div class="w-75" fxLayout="row" fxLayout="row wrap">
+  <!-- pepole -->
+  <div class="text-center" *ngFor="let dash of dashCard">
+    <cdk-dashcard [currentUser]="dash"></cdk-dashcard>
+    <span class="name" fxHide fxShow.gt-xs>{{dash.currentUser?.currentUserName}}</span>
+  </div>
+  <!-- search/notification -->
+  <button mat-mini-fab class="search">
+    <i class="material-icons">search</i> Search
+  </button>
+  <button mat-mini-fab class="notification">
+    <i class="mat-icon material-icons" role="img" aria-hidden="true">notifications_none</i>
+  </button>
+  <button mat-mini-fab class="notification backup">
+    <i class="space mat-icon material-icons" role="img" aria-hidden="true">backup</i>
+  </button>
+</div>
+<!-- border -->
+<div fxLayout="row" fxLayout="row">
+  <div fxFlex="70">
+    <div class="border"></div>
+  </div>
+</div>
+<!-- Feeds -->
+<div fxLayout="row" fxLayout="row">
+  <div fxFlex="36" style="margin-left: 43px;">
+    <p>Feeds</p>
+  </div>
+  <div class="tabs" fxFlex="28">
+    <p>All</p>
+    <p>Following</p>
+    <p>Newest</p>
+    <p>Popular</p>
+  </div>
+</div>
+<div fxLayout="row" fxLayout="row">
+  <!-- cards -->
+  <div fxFlex="70" style="justify-content: space-evenly;flex: 1 1 90%;">
+    <cardNum fxFlex="41.5" fxFlex.lt-sm="100" fxFlex.sm="50" *ngFor="let dash of Card"></cardNum>
+  </div>
+  <!-- Suggestions For You -->
+  <div fxFlex="26">
+    <cdk-doughnut-graph fxFlex="100" fxFlex.lt-sm="100" fxFlex.sm="50"></cdk-doughnut-graph>
+  </div>
+</div>
+<div fxLayout="row" fxLayout="row" style="margin-top: 6%;">
+  <!-- card -->
+  <div fxFlex="70" style="justify-content: space-evenly;flex: 1 1 90%;">
+    <cardNum fxFlex="41.5" fxFlex.lt-sm="100" fxFlex.sm="50" *ngFor="let dash of Card"></cardNum>
+  </div>
+  <!-- latest -->
+  <div fxFlex="26">
+    <cdk-share-price fxFlex="90.5" fxFlex.lt-sm="100" fxFlex.sm="50"></cdk-share-price>
+  </div>
+</div>

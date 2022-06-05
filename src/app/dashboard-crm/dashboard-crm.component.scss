@@ -1,0 +1,62 @@
+mat-card {
+  padding: 5px;
+  margin: 5px;
+}
+.w-75 {
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  .search{
+    border-radius: 15px;
+    border: 1px solid #dcdcdc;
+      background-color: unset;
+      padding: -18px 1px;
+      margin: 0;
+      height: 40px;
+      color: #dcdcdc;
+      cursor: pointer;
+  }
+  .notification{
+    background-color: unset;
+    color: #dcdcdc;
+    min-width: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    flex-shrink: 0;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+  }
+  .backup{
+    background-color: #78b8e3ed;
+    color: #fff;
+  }
+.name{
+  color: #666666;
+}
+.text-center{
+  text-align: center;
+}
+}
+.border{
+  border-bottom: 1px solid gainsboro;
+  width: 90%;
+  margin-left: 42px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    p{
+      color: #666666;
+    }
+    p:last-of-type{
+      color: #b666f2;
+    }
+}
+
+.mat-mini-fab:not([class*=mat-elevation-z]), .mat-raised-button:not([class*=mat-elevation-z]) {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}

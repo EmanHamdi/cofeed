@@ -1,0 +1,24 @@
+<div class="" [ngStyle]="{'height':'220px'}">
+  <!-- tittle -->
+  <div>
+    <p fxFlex="80">Latest Post Activity</p>
+  </div>
+  <!-- card -->
+  <div fxLayoutAlign="space-around stretch" fxLayoutWrap class="space-around">
+    <mat-card>
+      <img mat-card-image
+        src="https://img.freepik.com/free-vector/gradient-background-green-shades_23-2148370303.jpg?w=2000"
+        alt="Photo of a Shiba Inu">
+      <div fxFlex="60" class="m-auto">
+        <span class="name" fxHide fxShow.gt-xs>Name</span>
+        <div class="counter">
+          <button mat-fab>
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+          </button>
+          <span class="name" fxHide fxShow.gt-xs>80</span>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,43 @@
+.share-price{
+    margin: 10px 5px;
+    height: 220px;
+    margin: 10px;
+    background:#4DB6AC;
+}
+.nav-item {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: default;
+
+  &:hover {
+    transform: translate(0, -8px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .16)
+  }
+}
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0 -4px -2px 0;
+}
+.space-around{
+  width: 113%;
+  img{
+    height: 111px;
+      border-radius: 16px;
+      width: 50%;margin-top: unset;
+  }
+}
+.counter{
+  display: flex;
+  justify-content: space-around;
+  button{
+    background-color: unset!important;
+    box-shadow:none!important;
+    color: red;
+    width: auto;
+  }
+}
+.name{
+  margin: 15px 8px;
+}
+.m-auto{
+  margin:auto
+}

@@ -1,0 +1,40 @@
+.doughnut-graph-graph-holder{
+    margin: 10px 5px;
+    background-color:white;
+}
+.nav-item {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: default;
+
+  &:hover {
+    transform: translate(0, -8px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .16)
+  }
+}
+
+.color-btn{
+  background-color: #b666f2;
+  color: #fff;
+}
+
+.mat-raised-button:not([class*=mat-elevation-z]) {
+  box-shadow: unset;
+}
+.mat-raised-button{
+  padding: 0 23px;
+  border-radius: 7px;
+}
+.border{
+  border-bottom: 1px solid gainsboro;
+}
+.name{
+  margin: -46px 59px;
+  display: block;
+  width: 100%;
+}
+.second-name{
+  margin: 42px 59px;
+  display: block;
+  color: gainsboro;
+}
+

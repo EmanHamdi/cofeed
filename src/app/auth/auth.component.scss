@@ -1,0 +1,51 @@
+@use '~@angular/material' as mat;
+
+@mixin auth($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+
+    .sidenav{
+        overflow: hidden;
+        position: relative;
+        width: 250px;
+    }
+    .drawer{
+        overflow: hidden;
+        position: relative;
+        width: 80px;
+    }
+    [no-over-flow] {
+        overflow: hidden;
+    }
+    .router-outlet{
+        position: relative;padding: 0px 5px;
+    }
+    .spacer {
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 26px;
+        font-family: Roboto;color:#b666f2;
+        margin-top: 8px;
+    }
+    .mat-drawer-inner-container{
+      overflow: unset!important;
+    }
+     .mat-toolbar-single-row{
+      padding: unset!important;
+      width: 100%;
+      justify-content: center;
+     }
+     cdk-sidemenu-item.ng-star-inserted {
+      margin-left: 10%;
+    }
+    .shadow-box-logo{
+      box-shadow: -7px 5px 17px -5px #888888;
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+    }
+}
+
